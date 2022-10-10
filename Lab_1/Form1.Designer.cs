@@ -51,10 +51,14 @@
             this.orderAvailableForPickupTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.stopButton = new System.Windows.Forms.Button();
+            this.arrivalTimeUpDown = new System.Windows.Forms.NumericUpDown();
+            this.fulfilmentTimeUpDown = new System.Windows.Forms.NumericUpDown();
             this.ordersGrupBox.SuspendLayout();
             this.kitchenGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.orderNumberGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.arrivalTimeUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fulfilmentTimeUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // arrivalTimeLabel
@@ -303,12 +307,51 @@
             this.stopButton.TabIndex = 8;
             this.stopButton.Text = "Stop";
             this.stopButton.UseVisualStyleBackColor = true;
+            this.stopButton.Click += new System.EventHandler(this.StopButton_Click);
+            // 
+            // arrivalTimeUpDown
+            // 
+            this.arrivalTimeUpDown.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.arrivalTimeUpDown.Location = new System.Drawing.Point(15, 133);
+            this.arrivalTimeUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.arrivalTimeUpDown.Name = "arrivalTimeUpDown";
+            this.arrivalTimeUpDown.Size = new System.Drawing.Size(97, 29);
+            this.arrivalTimeUpDown.TabIndex = 9;
+            this.arrivalTimeUpDown.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            // 
+            // fulfilmentTimeUpDown
+            // 
+            this.fulfilmentTimeUpDown.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.fulfilmentTimeUpDown.Location = new System.Drawing.Point(15, 208);
+            this.fulfilmentTimeUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.fulfilmentTimeUpDown.Name = "fulfilmentTimeUpDown";
+            this.fulfilmentTimeUpDown.Size = new System.Drawing.Size(97, 29);
+            this.fulfilmentTimeUpDown.TabIndex = 10;
+            this.fulfilmentTimeUpDown.Value = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
             // 
             // Lab_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(948, 478);
+            this.Controls.Add(this.fulfilmentTimeUpDown);
+            this.Controls.Add(this.arrivalTimeUpDown);
             this.Controls.Add(this.stopButton);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.kitchenGroupBox);
@@ -327,6 +370,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.orderNumberGridView)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.arrivalTimeUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fulfilmentTimeUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -357,5 +402,7 @@
         private TextBox waitingCustomersNumberTextBox;
         private Label label6;
         private Button stopButton;
+        private NumericUpDown arrivalTimeUpDown;
+        private NumericUpDown fulfilmentTimeUpDown;
     }
 }
