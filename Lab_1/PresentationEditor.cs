@@ -4,7 +4,7 @@ namespace Lab_1
 {
     public class PresentationEditor : IPresentationEditor
     {
-        private Lab_1 _form;
+        private readonly Lab_1 _form;
 
         public PresentationEditor(Lab_1 form)
         {

@@ -37,7 +37,7 @@
             this.currentOrderNumberTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.OrderLineTextBox = new System.Windows.Forms.TextBox();
+            this.orderLineTextBox = new System.Windows.Forms.TextBox();
             this.kitchenGroupBox = new System.Windows.Forms.GroupBox();
             this.oredersAmountTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -113,7 +113,7 @@
             this.ordersGrupBox.Controls.Add(this.currentOrderNumberTextBox);
             this.ordersGrupBox.Controls.Add(this.label2);
             this.ordersGrupBox.Controls.Add(this.label1);
-            this.ordersGrupBox.Controls.Add(this.OrderLineTextBox);
+            this.ordersGrupBox.Controls.Add(this.orderLineTextBox);
             this.ordersGrupBox.Font = new System.Drawing.Font("Arial", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.ordersGrupBox.Location = new System.Drawing.Point(296, 22);
             this.ordersGrupBox.Name = "ordersGrupBox";
@@ -153,16 +153,16 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "The number of customers \r\nwaiting to place orders\r\n";
             // 
-            // OrderLineTextBox
+            // orderLineTextBox
             // 
-            this.OrderLineTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.OrderLineTextBox.Enabled = false;
-            this.OrderLineTextBox.Font = new System.Drawing.Font("Arial", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.OrderLineTextBox.Location = new System.Drawing.Point(178, 41);
-            this.OrderLineTextBox.Name = "OrderLineTextBox";
-            this.OrderLineTextBox.Size = new System.Drawing.Size(74, 34);
-            this.OrderLineTextBox.TabIndex = 0;
-            this.OrderLineTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.orderLineTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.orderLineTextBox.Enabled = false;
+            this.orderLineTextBox.Font = new System.Drawing.Font("Arial", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.orderLineTextBox.Location = new System.Drawing.Point(178, 41);
+            this.orderLineTextBox.Name = "orderLineTextBox";
+            this.orderLineTextBox.Size = new System.Drawing.Size(74, 34);
+            this.orderLineTextBox.TabIndex = 0;
+            this.orderLineTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // kitchenGroupBox
             // 
@@ -385,7 +385,7 @@
         private TextBox fulfilmentTimeTextBox;
         private Button startButton;
         private GroupBox ordersGrupBox;
-        private TextBox OrderLineTextBox;
+        private TextBox orderLineTextBox;
         private TextBox currentOrderNumberTextBox;
         private Label label2;
         private Label label1;
